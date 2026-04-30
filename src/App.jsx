@@ -6,9 +6,10 @@ import Signup from './pages/Signup'
 import {ToastContainer} from 'react-toastify'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import ForgetPassword from './pages/ForgetPassword'
+import URL from './Url'
 function App() {
   
-
+  console.log(URL)
   return (
     
     <div>

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { useNavigate,Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import URL from '../Url';
 
 const Login = () => {
 
@@ -18,7 +19,7 @@ const Login = () => {
         }
         console.log(obj)
 
-        let res = await fetch('https://socialmediag5-zsbh.onrender.com/users/login',{
+        let res = await fetch(URL+'/users/login',{
             method:"POST",
             headers:{
                 'content-type':'application/json'
